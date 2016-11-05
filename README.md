@@ -427,7 +427,7 @@ Sent to Arduiuno: 4
 Received from Arduino: 5
 ```
 
-There's also [another example sending multiple pieces of data from the Arduino to the Photon](https://github.com/rickkas7/serial_tutorial/example1.md).
+There's also [another example sending multiple pieces of data from the Arduino to the Photon](https://github.com/rickkas7/serial_tutorial/blob/master/example1.md).
 
 ## More Code Tips
 

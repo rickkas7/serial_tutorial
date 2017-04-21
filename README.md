@@ -2,7 +2,7 @@
 
 *More than you ever wanted to know about serial communications with the Particle Photon and Electron.*
 
-Updates to this document are here: [https://github.com/rickkas7/serial_tutorial] (https://github.com/rickkas7/serial_tutorial)
+Updates to this document are here: [https://github.com/rickkas7/serial_tutorial](https://github.com/rickkas7/serial_tutorial)
 
 ## USB serial
 
@@ -27,11 +27,11 @@ The `Serial.begin(9600);` call initializes the serial port. When you're using th
 
 The `Serial.printlnf` prints a formatted string to the debugging USB serial.
 
-The [documentation for Serial is here] (https://docs.particle.io/reference/firmware/photon/#serial).
+The [documentation for Serial is here](https://docs.particle.io/reference/firmware/photon/#serial).
 
 ### Particle CLI 
 
-A common way to view debug serial messages is the [Particle CLI] (https://docs.particle.io/guide/tools-and-features/cli/photon/). Note that the CLI only reads serial messages, it is strictly a serial monitor, and you can't type things to the Photon/Electron. Still, it's quick and easy, and very handy.
+A common way to view debug serial messages is the [Particle CLI](https://docs.particle.io/guide/tools-and-features/cli/photon/). Note that the CLI only reads serial messages, it is strictly a serial monitor, and you can't type things to the Photon/Electron. Still, it's quick and easy, and very handy.
 
 ```
 $ particle serial monitor
@@ -49,7 +49,7 @@ testing 6
 
 Select **Show Serial Monitor** in the Particle menu if the Serial Monitor is not showing. Make sure you have the correct port select and click **Connect**.
 
-![Particle Dev Window] (images/01particledev.png)
+![Particle Dev Window](images/01particledev.png)
 
 Note that you can write stuff to the serial port in Particle Dev, but you must do so in the **Enter string to send box**, it's not like a regular terminal emulator where you type in the same place where stuff is being printed out.
 
@@ -59,21 +59,21 @@ Select the port from the **Port** hierarchical menu in the **Tools** menu.
 
 Then select **Serial Monitor** from the **Tools** menu.
 
-![Arduino Window] (images/02arduino.png)
+![Arduino Window](images/02arduino.png)
 
 You can send data via serial with the Ardiuno IDE as well, but you need to enter text to send in the box at the top of the window and press Return or click **Send**.
 
 ### Windows - using PuTTY or CoolTerm
 
-For Windows, you can also use a program like [PuTTY] (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [CoolTerm] (http://freeware.the-meiers.org).
+For Windows, you can also use a program like [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [CoolTerm](http://freeware.the-meiers.org).
 
 It's hard to say what COM port your Photon or Electron will use, but if you open the Windows Device Manager and expand **Ports (COM & LPT)** it should show the device.
 
-![Device Manager] (images/03devicemanager.png)
+![Device Manager](images/03devicemanager.png)
 
 This is the configuration screen for PuTTY:
 
-![PuTTY] (images/04putty.png)
+![PuTTY](images/04putty.png)
 
 Click **Serial** (1) then enter the COM port number (2) then click **Open** (3).
 
@@ -204,9 +204,9 @@ One thing that you absolutely must never do is connect a Photon directly to a co
 
 Actual RS232 devices, such as old computers, newer computers with an adapter, and various external hardware devices likely use "real" RS232 signal levels, which can range between +15V and -15V. This will cause immediate, permanent damage to the Photon or Electron if connected directly.
 
-A TTL serial to RS232 adapter board is typically used in these cases. They are available from places like [SparkFun] (https://www.sparkfun.com/products/449). You can also find them on eBay, search for "TTL RS232 breakout".
+A TTL serial to RS232 adapter board is typically used in these cases. They are available from places like [SparkFun](https://www.sparkfun.com/products/449). You can also find them on eBay, search for "TTL RS232 breakout".
 
-![RS232 Converter] (images/07converter.jpg)
+![RS232 Converter](images/07converter.jpg)
 
 Make the following connections:
 
@@ -221,9 +221,9 @@ Note that TX and RX don't cross here, between the Photon and the converter, beca
 
 Two different connectors are used for RS232 serial, the DB9 and the DB25. The DB25, a "D" shaped 25-pin connector was the original connector but IBM PC compatible computers mostly settled on the smaller DB9 connector. The DB9 is also referred to as a DE9 connector.
 
-This is a close-up of the DB9 female connector on the [SparkFun] (https://www.sparkfun.com/products/449) converter board.
+This is a close-up of the DB9 female connector on the [SparkFun](https://www.sparkfun.com/products/449) converter board.
 
-![RS232 Converter Connector] (images/08sparkfun.jpg)
+![RS232 Converter Connector](images/08sparkfun.jpg)
 
 
 ### DTE/DCE
@@ -293,7 +293,7 @@ This is a rather silly example: Every 2 seconds the Photon sends a number to the
 
 Remember that serial is a byte-oriented protocol, so we keep reading bytes until we find a character that marks the end of the transmission. I selected the new line character ("\n"). 
 
-![Arduino to Photon connection] (images/06arduino.jpg)
+![Arduino to Photon connection](images/06arduino.jpg)
 
 Arduino code:
 

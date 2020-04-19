@@ -284,7 +284,7 @@ Neither the Photon or Electron support software (XON/XOFF) flow control, either.
 Here's an example of using serial to communicate between an Arduino (Uno, in this case) and a Photon. 
 
 - Photon TX connects to Arduino RX (0) (green wire)
-- Photon RX connects to Arduino RX (1) (blue wire)
+- Photon RX connects to Arduino TX (1) (blue wire)
 - Photon GND connects to Arduino GND (black wire)
 
 Remember: RX and TX always cross, and you must have a common GND connection. 
